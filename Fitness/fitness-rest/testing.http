@@ -1,0 +1,86 @@
+
+
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name"   : "Squats",
+    "reps"   : 10,
+    "weight" : 225,
+    "unit"   : "lbs",
+    "date"   : "08-01-2021"
+}
+
+###
+
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name"   : "One arm row",
+    "reps"   : 10,
+    "weight" : 35,
+    "unit"   : "lbs",
+    "date"   : "08-01-2021"
+}
+
+###
+
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json 
+
+{
+    "name"   : "Shoulder press",
+    "reps"   : 10,
+    "weight" : 115,
+    "unit"   : "lbs",
+    "date"   : "08-01-2021"
+}
+
+###
+
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name"   : "Bench press",
+    "reps"   : 10,
+    "weight" : 135,
+    "unit"   : "lbs",
+    "date"   : "08-01-2021"
+}
+
+###
+
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name"   : "Deadlift",
+    "reps"   : 10,
+    "weight" : 315,
+    "unit"   : "lbs",
+    "date"   : "08-01-2021"
+}
+
+###
+
+GET http://localhost:3000/exercises HTTP/1.1
+
+###
+
+PUT http://localhost:3000/exercises/61073252cdeded523c36cc17 HTTP/1.1
+content-type: application/json
+
+{
+    "_id": "61073252cdeded523c36cc17",
+    "name": "Deadlift",
+    "reps": 1,
+    "weight": 315,
+    "unit": "lbs",
+    "date": "08-01-2021"
+}
+
+###
+
+DELETE http://localhost:3000/exercises/610736befbdd295ca8874be8 HTTP/1.1
